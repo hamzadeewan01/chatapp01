@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat-Up</title>
+    <link
+      rel="shortcut icon"
+      href="https://image.winudf.com/v2/image1/Y29tLmNoYXR1cC5zdHJhbmdlcl9pY29uXzE1NTA3MjcyNjhfMDg4/icon.png?w=&fakeurl=1"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center" id="login">
+      <h1>Login</h1>
+      <form id="form1" method="post">
+        <div class="txt_field">
+          <input id="email" type="email" required />
+          <span></span>
+          <label>Eamil</label>
+        </div>
+        <div class="txt_field">
+          <input id="password" type="password" required />
+          <span></span>
+          <label>Password</label>
+        </div>
+        <input id="loginSubmit" type="submit" value="Login" />
+        <div class="signup_link">
+          Not a member? <a id="anker1" href="#">Signup</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="center1" id="signup">
+      <h1>SignUp</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input id="name" type="text" required />
+          <span></span>
+          <label>Full Name</label>
+        </div>
+        <div class="txt_field">
+          <input id="fatherName" type="text" required />
+          <span></span>
+          <label>Father Name</label>
+        </div>
+        <div class="txt_field">
+          <input id="date" type="date" required />
+          <span></span>
+          <!-- <label>Date Of Birth</label> -->
+        </div>
+        <div class="txt_field">
+          <input id="email1" type="email" required />
+          <span></span>
+          <label>Eamil</label>
+        </div>
+        <div class="txt_field">
+          <input id="password1" type="password" required />
+          <span></span>
+          <label>Password</label>
+        </div>
+        <input type="file" name="" id="file" />
+        <label for="file" id="labelFile"> Choose a Photo </label>
+        <input id="signUpSubmit" type="submit" value="SignUp" />
+        <div class="signup_link">
+          If You are already an account?<a id="anker2" href="#">Login</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="spinner-grow loader" id="loader1" role="status">
+      <span class="sr-only"></span>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" type="module"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
